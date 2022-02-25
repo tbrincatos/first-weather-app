@@ -1,0 +1,74 @@
+body {
+  padding-top: 20px;
+}
+h1,
+.temperature-features {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  padding: 25px 0;
+  margin: 40px;
+}
+p {
+  font-size: larger;
+}
+img {
+  border-radius: 4px;
+}
+form {
+  display: inline;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.current-weather-button {
+  display: block;
+  margin: 0 auto;
+}
+.current-weather-city {
+  padding: 10px;
+}
+
+.col-12 {
+  font-size: x-large;
+}
+.fas {
+  color: #405781;
+  font-size: x-large;
+  font-weight: 900;
+}
+.fas,
+.extra-day-forecast {
+  transition: all 150ms ease;
+}
+.fas:hover {
+  font-size: xx-large;
+  color: #998a9fda;
+}
+
+.unit {
+  color: black;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+.unit:hover {
+  color: #998a9fda;
+}
+.different-unit {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.five-day-forecast {
+  background: rgba(224, 223, 223, 0.5);
+  border-radius: 4px;
+  font-size: large;
+}
+.extra-day-forecast:hover {
+  cursor: pointer;
+  font-size: larger;
+}
