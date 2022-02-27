@@ -41,8 +41,7 @@ function updateDate(date) {
 }
 
 function injectDate(date) {
-  let currentDate = document.querySelector("#current-date");
-  currentDate.innerHTML = updateDate(date);
+  document.querySelector("#current-date").innerHTML = updateDate(date);
 }
 
 injectDate(new Date());
@@ -60,9 +59,8 @@ function updateHumidity(response) {
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
 }
 function updateCity(city) {
-  let cityName = document.querySelector("#city-name");
   if (city) {
-    cityName.innerHTML = city;
+    document.querySelector("#city-name").innerHTML = city;
   }
   let apiKey = `62f780f73f5ee00aa0f4d27f32e096c2`;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
@@ -84,28 +82,6 @@ function searchCity(event) {
 
 let userCity = document.querySelector("#user-city");
 userCity.addEventListener("submit", searchCity);
-
-//function changeTemp(event) {
-// event.preventDefault();
-//let temperature = document.querySelector("#current-temperature");
-//temperature.innerHTML = `37`;
-//let celsiusTemp = document.querySelector("#celsius");
-//celsiusTemp.innerHTML = `°C `;
-//event.target.innerHTML = `<strong>°F</strong>`;
-//}
-//let fahrenheit = document.querySelector("#fahrenheit");
-//fahrenheit.addEventListener("click", changeTemp);
-
-//function changeTempBack(event) {
-//event.preventDefault();
-//event.target.innerHTML = `<strong>°C </strong>`;
-//let temperature = document.querySelector("#current-temperature");
-//temperature.innerHTML = `3`;
-//let fahrenTemp = document.querySelector("#fahrenheit");
-//fahrenTemp.innerHTML = `°F`;
-//}
-//let celsius = document.querySelector("#celsius");
-//celsius.addEventListener("click", changeTempBack);
 
 let apiKey = `62f780f73f5ee00aa0f4d27f32e096c2`;
 let city = "paris";
